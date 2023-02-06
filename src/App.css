@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #e3e9ce;
+  font-family: "Farro", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.calculator {
+  background-color: #555A60;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 390px;
+  width: 250px;
+}
+
+.display {
+  color: lightcyan;
+  font-size: 36px;
+  position: relative;
+  padding: 20px 10px;
+  text-align: right;
+  height: 70px;
+  width: 100%;
+}
+
+.nums-container {
+  width: 75%;
+}
+
+.ops-container {
+  width: 25%;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  height: 35px;
+  width: 50px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.big-v {
+  height: 110px;
+}
+
+button.big-h {
+  width: 110px;
+}
+
+button.orange {
+  background-color: lightcyan;
+  color: black;
+}
+
+button.ac {
+  margin-right: 50%;
+}
