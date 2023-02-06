@@ -51,10 +51,8 @@ const App = () => {
 
       default: {
         let e = undefined;
-        //check for other operators
         if(ops.includes(innerText)) {
           if(ops.includes(lastPressed) && innerText !== '-') {
-            //Hectic
             const lastNumberIdx = calc.split('').reverse()
             .findIndex(char => char !== ' ' && nums.includes(+char)); 
             e = calc.slice(0, calc.length - lastNumberIdx) + ` ${innerText} `;
