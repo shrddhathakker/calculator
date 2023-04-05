@@ -123,7 +123,7 @@ const App = () => {
           onClick={handleClick}
           id="equals"
         >
-          =
+          = == 
         </button>
       </div>
     </div>
